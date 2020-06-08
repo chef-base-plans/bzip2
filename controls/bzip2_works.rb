@@ -7,10 +7,12 @@ control 'core-plans-bzip2-works' do
   impact 1.0
   title 'Ensure bzip2 works as expected'
   desc '
-  Note: Since bzip2 --version not only outputs its version info to stderr
-  but also random text to stout, then only the stderr is being checked in
-  the test
+  Verify bzip2 by ensuring (1) its installation directory exists and (2) that
+  it returns the expected version.    Note that since bzip2 --version not only 
+  outputs its version info to stderr but also random text to stout, then the stdout
+  content is being ignored, only the stderr validated.
   '
+  
   plan_installation_directory = command("hab pkg path #{plan_origin}/#{plan_name}")
   describe plan_installation_directory do
     its('exit_status') { should eq 0 }

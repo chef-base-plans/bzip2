@@ -1,1 +1,2 @@
-command_relative_path: '/bin/bzip2'
+plan_name: 'bzip2'
+command_relative_path: 'bin/bzip2'

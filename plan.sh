@@ -8,7 +8,7 @@ bzip2 is a free and open-source file compression program that uses the \
 Burrows–Wheeler algorithm. It only compresses single files and is not a file \
 archiver.\
 "
-pkg_upstream_url="http://www.bzip.org/"
+pkg_upstream_url=https://www.sourceware.org/bzip2
 pkg_license=('bzip2')
 pkg_source="https://fossies.org/linux/misc/${pkg_name}-${pkg_version}.tar.gz"
 pkg_shasum="ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269"
